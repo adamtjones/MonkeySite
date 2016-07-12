@@ -1,0 +1,20 @@
+<ul class='itemList'>
+	<li ng-repeat='user in users.list'>
+		{{ user.name }} - <a ui-sref='itemList.detail({id: user.id})'>view detail</a>
+	</li>
+</ul>
+
+<aside class='user-detail'>
+	<header><h3>Item Detail</h3></header>
+<section ui-view></section>
+</aside>
+	
+	<!--<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+	<li>monkey</li>
+</ul>-->
