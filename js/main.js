@@ -9,25 +9,27 @@
             $stateProvider
                 .state('home', {
                     url: '/',
-                    templateUrl: '/views/home.html'
+                    templateUrl: '/views/partials/home.html',
+                    controller: 'mainController',
+                    controllerAs: 'controller'
                 })
                 .state('itemCategoryList', {
                     url: '/itemCategoryList',
-                    templateUrl: 'itemCategoryList.html',
-                    controller: 'UserController',
-                    controllerAs: 'users'
+                    templateUrl: '/views/partials/itemCategoryList.html',
+                    controller: 'categoryController',
+                    controllerAs: 'controller'
                 })
                 .state('itemList', {
                     url: '/itemList',
-                    templateUrl: 'itemList.html',
-                    controller: 'UserController',
-                    controllerAs: 'users'
+                    templateUrl: '/views/partials/itemList.html',
+                    controller: 'itemController',
+                    controllerAs: 'controller'
                 })
                 .state('itemDetails', {
                     url: '/itemDetails',
-                    templateUrl: 'itemDetails.html',
-                    controller: 'UserController',
-                    controllerAs: 'users'
+                    templateUrl: '/views/partials/itemDetailPage.html',
+                    controller: 'detailController',
+                    controllerAs: 'controller'
                 });
         });
 })();

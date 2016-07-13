@@ -4,7 +4,6 @@
     .module('taco')
      .factory('API', function($http) {
 
-
       function getWeather(city)
       {
         var call = $http({

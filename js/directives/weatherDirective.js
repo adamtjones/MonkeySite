@@ -7,7 +7,7 @@
     restrict: 'E', // Restrict to Element only
     scope: {},
     replace: true, // Replace as opposed as inserting into
-    templateUrl:'../views/weather.html',
+    templateUrl:'./views/partials/weather.html',
     transclude: true, // Will make sure any HTML inside of the directive element gets included
 
     // link method-boilerplate

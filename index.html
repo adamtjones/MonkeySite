@@ -25,22 +25,18 @@
 		<h2 class="headline">The Monkey Shop</h2>
 		
 		<nav>
-			<a ui-sref='home'>Home Page</a> |
-			<a ui-sref='itemCategoryList'>Item Category List</a> |
+			<a ui-sref="home">Home Page</a> |
+			<a ui-sref="itemCategoryList">Item Category List</a> |
 			<!--<a href="/itemList/">Item List</a> |-->
-			<a ui-sref='itemList'>Item List</a>
+			<a ui-sref="itemList">Item List</a>
 		</nav>
 		
 		<h4>The Best Monkeys Money Can Buy</h4>
 		<input type="search" class="search" placeholder="Search">
 
-		<weather city="Johannesburg"></weather>
-
-
-
+		<weather city="Cape Town"></weather>
 
 		<main ui-view>
-		
 		</main>
 
 
@@ -57,12 +53,14 @@
 			</div>
 		</footer>
 	</div>
-	<!--Angular script after npm install angular in Terminal-->
-	<!--JQuery-->
-	<!--Lodash-->
 	<!--link to JS file-->
 	<script src="js/main.js"></script>
 	<script src="js/weather.js"></script>
-	<script src="js/weatherDirective.js"></script>
+	<script src="js/directives/weatherDirective.js"></script>
+	<script src="js/controllers/home.js"></script>
+	<script src="js/controllers/itemList.js"></script>
+	<script src="js/controllers/categoryList.js"></script>
+	<script src="js/controllers/itemController.js"></script>
+	<script src="js/controllers/itemDetails.js"></script>
 </body>
 </html>
