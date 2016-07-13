@@ -17,7 +17,7 @@
 
       return {
         getWeather:getWeather,
-      }
+      };
 
      
      });
