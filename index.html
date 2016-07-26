@@ -10,35 +10,20 @@
 		<link href="reset.css">
 		<!--CSS style sheet-->
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<!--couldn't get background image to work in CSS, so did below-->
-		<!--<style type="text/css" media="screen">
-		body {
-			background-image: url(images/monkey.jpg);
-		}
-		</style>-->
+		<!--Angular-->
 		<script src="/node_modules/angular/angular.js"></script>
 		<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 	</head>
 	<body>
-		
-		
 		<h2 class="headline">The Monkey Shop</h2>
-		
 		<nav>
 			<a ui-sref="home">Home Page</a> |
-			<a ui-sref="itemCategoryList">Item Category List</a> |
-			<!--<a href="/itemList/">Item List</a> |-->
+			<a ui-sref="itemCategoryList">Category List</a> |
 			<a ui-sref="itemList">Item List</a>
 		</nav>
-		
-		<h4>The Best Monkeys Money Can Buy</h4>
-		<input type="search" class="search" placeholder="Search">
 
-		<weather city="Cape Town"></weather>
 
-		<main ui-view>
-		</main>
-
+		<main ui-view></main>
 
 		<div class="container-fluid bufferFoot">
 			<footer class="row">
@@ -55,8 +40,6 @@
 	</div>
 	<!--link to JS file-->
 	<script src="js/main.js"></script>
-	<script src="js/weather.js"></script>
-	<script src="js/directives/weatherDirective.js"></script>
 	<script src="js/controllers/home.js"></script>
 	<script src="js/controllers/itemList.js"></script>
 	<script src="js/controllers/categoryList.js"></script>

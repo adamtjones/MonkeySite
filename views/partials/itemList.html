@@ -1,27 +1,7 @@
-
 <div class="col-sm-12">
-	<H1>Here is the Item List page view for The Monkey Shop, itemList.html</h1>
-
-		Seems to be working.
-
-<li><a ui-sref="blogs">Blogs</a></li>
-
-
-
-<ul class='itemList'>
-	<li ng-repeat='user in users.list'>
-		{{ user.name }} - <a ui-sref='itemList.detail({id: user.id})'>view detail</a>
-	</li>
-		<li><a ui-sref='itemDetails'>Monkey</a></li>
-		<li>monkey</li>
-		<li>monkey</li>
-		<li>monkey</li>
-</ul>
-
-<aside class='user-detail'>
-	<header><h3>Item Detail</h3></header>
-<section ui-view></section>
-</aside>
-	
-	
+	<ul class='itemList'>
+		<li><a ui-sref='itemDetails'>Ed the monkey</a><img class="item" src="images/monkey.jpg"></li>
+		<li><a ui-sref='itemDetails'>Steve the chimp</a><img class="item" src="images/monkey1.jpg"></li>
+		<li><a ui-sref='itemDetails'>Bob the gorilla</a><img class="item" src="images/monkey2.jpg"></li>
+	</ul>	
 </div>
