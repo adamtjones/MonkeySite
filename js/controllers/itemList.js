@@ -3,7 +3,7 @@
     
     angular
     .module('taco')
-    .controller('itemController', function(API) {
+    .controller('itemController', function() {
        var vm = this;
        });
 })();
